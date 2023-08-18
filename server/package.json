@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "./node_modules/.bin/nodemon ./bin/www -w app.js -w server",
+    "migrate": "npx sequelize-cli db:migrate",
+    "genmigrate": "npx sequelize-cli migration:generate --name"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.0",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "mysql2": "^2.3.3",
+    "pg": "^6.2.4",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^6.25.3"
+  },
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2",
+    "nodemon": "^1.11.0",
+    "sequelize-cli": "^6.2.0"
+  }
+}
